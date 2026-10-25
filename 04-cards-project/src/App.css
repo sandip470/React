@@ -1,0 +1,12 @@
+.center h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.center h3 span {
+  display: block;
+  font-size: 10px;
+  color: #8b8b8b;
+  font-weight: 400;
+  margin-top: 4px;
+}

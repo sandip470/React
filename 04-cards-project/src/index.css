@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  padding: 20px;
+}
+
+.parent {
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+  min-height: 100vh;
+}
+/* Main Card */
+.Card {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Top Section */
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.top img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  padding: 3px;
+}
+
+.top button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #dadada;
+  padding: 6px 10px;
+  font-size: 11px;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #555;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.top button:hover {
+  background-color: #f2f2f2;
+}
+
+/* Center Section */
+.center {
+  margin-top: 15px;
+}
+
+.center h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.center h3 span {
+  display: block;
+  font-size: 10px;
+  color: #8b8b8b;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.center h2 {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Job Tags */
+.center .tag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.center .tag h4 {
+  font-size: 11px;
+  color: #444;
+  background-color: #f1f1f1;
+  padding: 6px 9px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+/* Bottom Section */
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Aligns salary info and button along the bottom baseline */
+  width: 100%;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.salary-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.bottom p {
+  font-size: 11px;
+  color: #888;
+}
+
+/* Apply Now Button */
+.bottom button {
+  background-color: #111;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 12px;
+  font-size: 11px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.bottom button:hover {
+  background-color: #333;
+}
